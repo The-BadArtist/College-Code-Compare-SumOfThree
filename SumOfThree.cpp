@@ -12,6 +12,5 @@ int main() {
     int sum = x + y + z;
     cout << x << " + " << y << " + " << z << " = " << sum << endl;
     
-
     return 0;
 }

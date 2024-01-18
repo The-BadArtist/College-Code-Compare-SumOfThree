@@ -5,12 +5,12 @@ PROGRAM sumOfThree
 ! Type declarations
 real :: x, y, z, sum
 
-
 ! Executable statements
 x = 1.0
 y = 2.0
 z = 3.0
 Sum = x + y + z
-PRINT (*, '(I0, "+", I0, "+", I0, "=", I0)') x, y, z, Sum
+
+PRINT *, int(x), " + ", int(y), " + ", int(z), " = ", int(Sum)
 
 END PROGRAM
