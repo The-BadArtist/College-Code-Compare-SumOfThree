@@ -2,7 +2,6 @@
 A simple program to add three numbers together.
 '''
 def sum (number1 = 0, number2 = 0, number3 = 0, *args):
-# def sum (arg = 0, *args):
     if len(args) > 0: 
         #* Checks if there is any addition variables
         print("Only 3 numbers try again")
@@ -13,14 +12,17 @@ def sum (number1 = 0, number2 = 0, number3 = 0, *args):
         print(number1, " + ", number2, " + ", number3, " = ", sum) 
 
     
-    # sum = arg
-    # if len(args) > 0 :
-    #     for number in args:
-    #         sum += number
+        
+def sum_of_unknown_num( arg = 0, *args):
+    sum = arg
+    if len(args) > 0:
+        for number in args:
+            sum += number
 
-    # print(sum)
+    print(sum)
+
 
     
 if __name__ == "__main__":
     sum(1, 2, 3) # inputs sum(number1 , number2, number3)
-    
+    sum_of_unknown_num(1, 3, 5, 6)
